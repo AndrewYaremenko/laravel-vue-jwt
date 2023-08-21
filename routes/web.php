@@ -5,4 +5,4 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('{page}', [IndexController::class, '__invoke'])->where('page', '.*');
+Route::get('{page}', [IndexController::class, 'index'])->where('page', '.*');

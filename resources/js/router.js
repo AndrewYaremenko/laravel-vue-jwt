@@ -8,8 +8,16 @@ export default new VueRouter({
 
     routes: [
         {
-            path: 'fruits', component: () => import('./components/Fruits/Index'), 
+            path: '/fruits', component: () => import('./components/Fruits/Index'), 
             name: 'fruits.index'
-        }
+        },
+        {
+            path: '/users/login', component: () => import('./components/User/Login'), 
+            name: 'user.login'
+        },
+        {
+            path: '/users/registration', component: () => import('./components/User/Registration'), 
+            name: 'user.registration'
+        },
     ]
 });
